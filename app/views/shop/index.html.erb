@@ -1,0 +1,54 @@
+<h1 class="cycle_taital">Our cycle</h1>
+
+
+<% @cycle_gallery.each do |cycle|%>
+
+    <!-- cycle section start -->
+<div class="cycle_section layout_padding">
+   <div class="container">
+   <% if cycle.id % 2 != 0 %>
+      <div class="cycle_section_2 layout_padding">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="box_main">
+                  <h6 class="number_text"><%= cycle.id %></h6>
+                  <div class="image_2">
+                  <%= image_tag cycle.store_image ,:height=>"700",:width=>"700" %>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <h1 class="cycles_text"><%= cycle.name %></h1>
+               <p class="lorem_text"><%= cycle.description %></p>
+               <div class="btn_main">
+                  <%= button_to 'Buy now',line_items_path(:store_id => cycle.id)%>
+                  <h4 class="price_text">Price <span style=" color: #f7c17b">Rs.</span> <span style=" color: #325662"><%= cycle.price %></span></h4>
+               </div>
+            </div>
+         </div>
+      </div>
+      <% else %>
+      <div class="cycle_section_3 layout_padding">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="cycles_text"><%= cycle.name %></h1>
+               <p class="lorem_text"><%= cycle.description %></p>
+               <div class="btn_main">
+               <%= button_to 'Buy now',line_items_path(:store_id => cycle.id)%>
+               <h4 class="price_text">Price <span style=" color: #f7c17b">Rs.</span> <span style=" color: #325662"><%= cycle.price %></span></h4>
+               </div>
+               </div>
+            <div class="col-md-6">
+            <div class="box_main_3">
+            <h6 class="number_text_2"><%= cycle.id %></h6>
+            <div class="image_2"> <%= image_tag cycle.store_image ,:height=>"700",:width=>"700" %></div>
+            </div>
+            </div>
+         </div>
+      </div>
+      <% end %>
+   </div>
+</div>
+
+<% end %>
+

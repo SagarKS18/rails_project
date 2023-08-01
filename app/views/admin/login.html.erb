@@ -1,0 +1,30 @@
+<div class="cycle_section_2 layout_padding">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="box_main">
+                        <h6 class="number_text">Best</h6>
+                        <div class="image_3"><img src="/assets/img-1.png"></div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+
+<%= flash[:notice] %>
+
+<h1>Admin Login</h1>
+<%= form_with url: "/admin/login", method: :post do |form| %>
+<div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+<div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+  <div class="buy_bt">
+    <%= form.submit "Admin Login" %>
+  </div>
+<% end %>
+
+</div>
+               </div>
+            </div>

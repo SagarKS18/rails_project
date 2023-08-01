@@ -1,0 +1,263 @@
+/* app/assets/stylesheets/form.css.scss */
+
+/* Style the form container */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Center the actions section */
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background-color: #1b70d1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#error_explanation {
+  color: red;
+}
+
+#error_explanation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#error_explanation li {
+  margin-bottom: 5px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+/* Style the label for the fields */
+.field label {
+  display: block;
+  font-weight: bold;
+  min-width: 100px;
+  padding-right: 10px;
+}
+
+/* Style the form fields */
+.field input[type="text"],
+.field textarea {
+  flex: 1;
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  /* Style the notice message */
+  #notice {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  thead {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the table header */
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Style the table rows */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  /* Style the 'New Store' link */
+  .new-store-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .new-store-link:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Cart Area */
+  .cart_area {
+    padding: 50px 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .table th {
+    background-color: #f0f0f0;
+  }
+  
+  .cart_inner .media {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart_inner .media img {
+    margin-right: 10px;
+  }
+  
+  .cart_inner .media p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .cart_inner .product_count {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart_inner .product_count input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .checkout_btn_inner {
+    margin-top: 20px;
+  }
+  
+  .gray_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn:hover,
+  .gray_btn:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 767px) {
+    .cart_inner .media {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart_inner .media img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .product_count {
+      margin-top: 10px;
+    }
+  
+    .checkout_btn_inner {
+      flex-direction: column;
+    }
+  
+    .checkout_btn_inner a {
+      margin-bottom: 10px;
+    }
+  }
